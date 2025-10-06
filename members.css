@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading {
+  text-align: center;
+  color: blue;
+  margin: 20px 0;
+  background-color: white;
+  height: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.head {
+  padding: 30px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(2, 300px); /* 2 rows with fixed height */
+  gap: 100px 20px;
+  padding-bottom: 100px;
+  max-width: 1000px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.container .img {
+  width: 100%;
+  height: 100%;
+}
+.container .img:hover {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+
+.container .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes sure images fit nicely */
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.container .img h4,
+.container .img p {
+  text-align: center;
+  background-color: black;
+  color: aliceblue;
+  margin: 0;
+  height: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  font-weight: bolder;
+}
+.container a {
+  text-decoration: none;
+}
+
+/* Specific placements (optional, can remove if just normal grid order is fine) */
+.img1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.img2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.img3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.img4 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.img5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.img6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
